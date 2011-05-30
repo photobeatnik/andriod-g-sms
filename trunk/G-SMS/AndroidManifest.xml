@@ -7,17 +7,19 @@
 
     <application android:icon="@drawable/icon" android:label="@string/app_name">
     	<uses-library android:name="com.google.android.maps" />  
-        <activity android:name="GSMSTabWidget"
+        <activity android:name="br.com.gsms.gui.GSMSTabWidget"
                   android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HistoryActivity" android:label="History Tab"/>
-        <activity android:name=".MapsMyLocActivity" android:label="My Loc Actitivy"/>
-        <activity android:name=".MessageActivity" android:label="Message Tab"/>
+        <activity android:name="br.com.gsms.HistoryActivity" android:label="Histórico"/>
+        <activity android:name="br.com.gsms.LocationActivity" android:label="Selecione uma Localização"/>
+        <activity android:name="br.com.gsms.MessageActivity" android:label="Messagem"/>
+        <activity android:name="br.com.gsms.ContactsActivity" android:label="Agenda"/>
     </application>
+    <uses-permission android:name="android.permission.READ_SMS"/>
     <uses-permission android:name="android.permission.SEND_SMS"/>
     <uses-permission android:name="android.permission.RECEIVE_SMS"/>
 	<uses-permission android:name="android.permission.READ_CONTACTS"/>
