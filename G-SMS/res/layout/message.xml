@@ -3,60 +3,67 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
+    android:layout_height="fill_parent">
 	<LinearLayout android:orientation="horizontal"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="10sp">
 		<EditText android:id="@+id/numeroDestino"
-				android:layout_width="fill_parent"
+				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:minLines="1"
-				android:layout_marginTop="10sp"
-				android:hint="Para"
+				android:hint="Número de destino"
 				android:gravity="left"
 				android:inputType="phone"/>
+		<ImageButton android:id="@+id/btAgenda"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/mic_white"/>
+		<ImageButton android:id="@+id/btHistorico"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/mic_white"/>			    
 	</LinearLayout>
-    
 	<LinearLayout android:orientation="horizontal"
 			android:layout_width="fill_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="10sp">
+			android:layout_height="wrap_content">
 		<TextView android:id="@+id/header_text"
-				android:text="Mensage:"
+				android:text="Mensagem:"
 				android:textStyle="bold"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginLeft="5sp"/>
-		<TextView android:id="@+id/counter_text"
-				android:text="0"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_weight="1"
-				android:gravity="right"
-				android:layout_marginRight="10sp"/>
 	</LinearLayout>
 	<EditText android:id="@+id/message_editor"
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:minLines="4"
-		android:layout_marginTop="10sp"
 		android:hint="Digite a mensagem"/>
 	<LinearLayout android:orientation="horizontal"
 			android:layout_width="fill_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="10sp">
+			android:layout_height="wrap_content">
 		<Button android:id="@+id/addLocAtual"
 				android:text="Adicionar Localização Atual"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"/>
-		<Button android:id="@+id/enviar"
-				android:text="Enviar"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"/>				
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="14dp"/>
 	</LinearLayout>
-	
-	
-	
+	<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		<Button android:id="@+id/addLocSelected"
+				android:text="Selecionar Localização"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="14dp"/>				
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		<Button android:id="@+id/enviar"
+			android:text="Enviar"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="14dp"/>
+	</LinearLayout>	
 </LinearLayout>
